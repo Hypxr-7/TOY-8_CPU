@@ -15,6 +15,7 @@ https://github.com/logisim-evolution/logisim-evolution
 • To begin inputting your program, first enable Auto-Tick from the Simulate Tab.\
 • Ideally set the Auto-Tick Frequency to 2Hz, but faster work as well.\
 • Then load your program by inputting the address and the data.\
+• Hold the LOAD button for a second to load that value.\
 • Once done, disable Auto-Tick and if the clock is high, click it one to set it to low.\
 • Also set the data and address input to 0.\
 • Then click on the RUN button to enable the CPU. This will be evident by the LED turning green.\
