@@ -1,7 +1,8 @@
 
 # TOY-8 CPU in Logism
 
-The following is a TOY-8 CPU, a simplified version of the TOY CPU.
+The following is a TOY-8 CPU, a simplified version of the TOY CPU.\
+Toy-8 CPU WS is an extended version with shifters.
 
 # PREREQUISITES
 
@@ -28,12 +29,16 @@ https://github.com/logisim-evolution/logisim-evolution
 |--------|-----------|------------|
 |   0    | Halt     | Halt  |
 |   2    | Add      |  R = R + M[addr] |
+|   3|   Left Shift | R = R * 2 |
 |   4    | Bitwise AND |  R = R & M[addr] |
+|5|Right Shift| R = R / 2|
 |   6    |   Bitwise XOR| R = R ^ M[addr]  |
 |   8    |   Load Addr |  R = addr |
 |   A    |   Load|  R = M[addr] |
 |   C    |   Store|  M[addr] = R |
 |   E    |   Branch|  if (R == 0) PC = addr |
+
+*Note: For left/right shift, the value in the address part can be anything. It does not effect the operation. 
 
 
 
